@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var languages = ['js', 'php', 'ruby'];
+        // console.log('toString: ' + languages.toString());
+        // console.log('join: ' + languages.join(', '));
+        // console.log('pop: ' + languages.pop()); // ruby -> tra ve phan tu da bi xoa cuoi mang (mang rong se tra ve undefine)
+        // console.log('shift: ' + languages.shift()); // js -> nguoc vs pop
+        // console.log('push: ' + languages.push('1', '2')); // 5 tra ve do dai mang (them gia tri cuoi mang)
+        // console.log('unshift: ' + languages.unshift(1, 2)); // 5 tra ve do dai mang (them gia tri dau mang)
+        
+        // languages.splice(1, 2, 'html', 'css'); // ['js', 'html', 'css']
+        // languages.splice(viTriBatDauXuLy, soPhanTuMuonXoa, themVaoArr);
+
+        // languages2 = ['html', 'css'];
+        // console.log(languages.concat(languages2)); // ['js', 'php', 'ruby', 'html', 'css']
+        
+
+        // console.log(languages.slice(1, 2)); // ['php']
+        // languages.slice(viTriBatDauCat, diemDungCat);
+        // console.log(languages.slice()); // ['js', 'php', 'ruby'] coppy mang
+        console.log(languages.slice(1)); // ['php', 'ruby'] lay vi tri '1' den cuoi mang
+
+        console.log(languages); 
+    </script>
+</body>
+</html>

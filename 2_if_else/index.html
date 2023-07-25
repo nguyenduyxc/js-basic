@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* 
+       dang false: 
+            0, 
+            false, 
+            '' "", 
+            NaN, 
+            undefiled, 
+            null
+       */
+
+       result = 'A' && 'B' && 'C' && 'D' && 'E'; 
+       console.log(result); // E -> gia tri cuoi
+
+       result2 = 'A' && 'B' && 'C' && NaN && null && 'D';
+       console.log(result2); // NaN -> sai dau lay do
+       
+       if (!result2) {
+            console.log('false: ' + result2);
+       }
+
+       result3 = 'A' || 'B' || 'C' || null || 'D';
+       console.log(result3); // 'A' dung dau lay gia tri do
+    </script>
+</body>
+</html>

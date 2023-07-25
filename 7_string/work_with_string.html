@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        keyword: js string methods
+        1. length 
+        2. find index
+        3. cut string 
+        4. replace
+        5. convert to upper case
+        6. convert to lower case
+        7. trim
+        8. split
+        9. get a character by index 
+        */
+
+        var myString = '    Nguyen Duc Duy     ';
+
+        // 1
+        console.log('length: ' + myString.length);
+        // 2
+        // console.log('indexOf: ' + myString.indexOf('D'));
+        // console.log('indexOf: ' + myString.indexOf('D', 8));
+                                                        // ^
+                                                        // bat dau lay sau gia tri thu 8 
+        console.log('search: ' + myString.search('D')); // ko tim kiem sau ky tu khac dc 
+
+        // 3
+        console.log('slice: ' + myString.slice(4, 5)); // [4, 5)
+        console.log('slice: ' + myString.slice(4)); // [4, ++)
+        console.log('slice: ' + myString.slice(-2, -1)); // [-2, -1)
+        console.log('slice: ' + myString.slice(-3)); // [-3, ++)
+
+        // 4
+        console.log('replace: ' + myString.replace('D', 'daDcThayThe'));
+        console.log('replace all: ' + myString.replace(/D/g, 'daDcThayThe'));
+
+        // 5    
+        console.log('upper case: ' + myString.toUpperCase());
+
+        // 6
+        console.log('lower case: ' + myString.toLowerCase());
+
+        // 7
+        console.log('trim: ' + myString.trim());
+
+        // 8
+        console.log('split: ' + 'js, php, ruby'.split(', '));
+
+        // 9
+        console.log('charAt: ' + myString.charAt(7));
+
+
+        function ngoai() {
+            var bien = 1;
+            trong()
+            function trong() {
+                if (bien) {
+                    console.log('bien: ' + bien);
+                }
+            }
+        }
+
+        ngoai()
+
+    </script>    
+</body>
+</html>

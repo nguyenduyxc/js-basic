@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    var emailKey = 'email';
+
+    var myInfor = {
+        firstName: 'Nguyen',
+        lastName: 'Duy',
+        age: 18,
+        [emailKey]: 'dduy961@gmail.com',
+        'country': 'VN',
+        fullName: function () {
+            return this.firstName + ' ' + this.lastName;
+        }
+    };
+
+    // add obj
+    myInfor.themValueKieuNay1 = 'value dc them';
+    myInfor['them-value-kieu-nay'] = 'value dc them kieu nay';
+
+    // delete obj
+    delete myInfor.age;
+
+    console.log(myInfor);
+    // access obj
+    console.log(myInfor['them-value-kieu-nay']); // value dc them kieu nay
+    console.log(myInfor.age); // 18
+    console.log(myInfor.fullName()); // Nguyen Duy
+
+    /*
+    * function -> phuong thuc / thuoc tinh
+    * other -> thuoc tinh / methods
+    * */
+</script>
+</body>
+</html>

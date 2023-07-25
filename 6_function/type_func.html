@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        1. Declaration function
+        2. Expression function
+        3. Arrow function
+        */
+
+        showMessage() // co the goi trc khi dịnh nghia
+        function showMessage() {
+            console.log('Declaration function');
+        }
+
+        // showMessage2() // chi co the goi sau khi dịnh nghia
+        var showMessage2 = function() {
+            console.log('Expression function');
+        }
+
+        var showMessage3 = () => {
+            console.log(' Arrow function');
+        }
+        showMessage3()
+    </script>
+</body>
+</html>

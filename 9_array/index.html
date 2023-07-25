@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        1. Tao mang 
+            - cah tao
+            - su dung the nao
+            - check data type
+        2. Truy xuat mang 
+            - Do dai
+            - Lay pha tu theo index 
+        */
+
+        var languages = [
+            'js',
+            'php',
+            'ruby',
+        ];
+        // co the chua bat ky gia tri nao 
+        // console.log(languages);
+
+        var languagesObj = new Array(
+            'js',
+            'php',
+            'ruby',
+            {},
+            function () {}
+        );
+        // console.log(languagesObj);
+        // console.log(typeof languages); // object
+        // console.log(typeof languagesObj); // object
+        // console.log(Array.isArray([])); // true
+        // console.log(Array.isArray({})); // false
+
+        // do dai
+        console.log('do dai: ' + languages.length);
+
+        // lay gia tri thu
+        console.log('lay gia tri theo index: ' + languages[1]);
+    </script>
+</body>
+</html>

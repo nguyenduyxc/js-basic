@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object constructor
+        function User(firstName, lastName, age) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+
+            this.getFullName = function () {
+                return `${this.firstName} ${this.lastName}`;
+            }
+        }
+
+        var admin = new User('a', 'd', 18); // doi tuong admin
+        var guard = new User('g', 'g', 19); // doi tuong guard
+
+        admin.newPropertyForAdmin = 'newPropertyForAdmin';
+        guard.newPropertyForGuard = 'newPropertyForGuard';
+        console.log(admin.getFullName());
+        console.log(guard);
+    </script>
+</body>
+</html>

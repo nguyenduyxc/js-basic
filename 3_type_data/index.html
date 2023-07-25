@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        1, Du lieu nguyen thuy - Primitive data
+            - Number
+            - String
+            - Boolean
+            - undefined
+            - Null   // nothing
+            - Symbol
+        2, Du lieu phuc tap - Complex data
+            - Function
+            - Object
+         */
+
+        //  string type
+        fullName = "Nguyen \"Duc Duy"; // them dau \ de hien thi dau ", neu la dau ' thi ko can
+        // console.log(fullName);
+
+        // undefined type
+        var age;
+        // console.log(age);
+
+        // Symbol type
+        var id = Symbol('id'); // unique
+        var id2 = Symbol('id'); // unique
+        // console.log(id, id2);
+
+        // function type
+        myFunction = function() {
+            alert('myFunction')
+        }
+        // myFunction()
+
+        // Object type
+        var myObject = {
+            name: 'Duc Duy',
+            age: 18,
+            myFunc: function () {
+                return 12;
+            }
+        };
+        // console.log('myObject: ', myObject);
+
+        var myArray = [
+            'js',
+            'php',
+            'ruby'
+        ];
+        // console.log('myArray: ', myArray);
+
+        console.log(typeof(myArray), typeof(myObject), typeof(null));
+        /* note:
+        null, object, arr deu cos type la object
+        */
+    </script>
+</body>
+</html>
