@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function User(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        User.prototype.className = 'f8';
+        User.prototype.getClassName = function () {
+            return this.className;
+        }
+
+        var lam = new User('Lam', 'Xung');
+        var xung = new User('Xung', 'Lam');
+
+        console.log(lam);  // User {firstName: 'Lam', lastName: 'Xung'}
+        console.log(xung.getClassName());  // f8
+    </script>
+</body>
+</html>
