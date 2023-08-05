@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // cach tao de quy
+        // - xac dinh diem dung
+        // - handle tao ra diem dung
+
+
+        function countDown(number) {
+                if (number == 0) {
+                    return;
+                }
+                
+                console.log(number);
+                return countDown(--number);
+            }
+
+        countDown(10);
+
+
+        function loop(start, end, callback) {
+            if (start < end) {
+                callback(start);
+                return loop(start+1, end, callback);
+            }
+        }
+
+        var arr = ['js', 'php', 'ruby'];
+
+        loop(0, arr.length, function (i) {
+            console.log(arr[i]);
+        })
+
+
+        function giaiThua(number) {
+            
+            if (number > 1) {
+                return number * giaiThua(number - 1);
+            }
+            return 1;
+        }
+
+        console.log(giaiThua(6));
+
+
+    </script>
+</body>
+</html>
+    
